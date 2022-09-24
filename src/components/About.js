@@ -1,9 +1,8 @@
-const About = (props) => {
+const About = ({aboutData}) => {
     return ( 
         <aside>
-            <img src="{props.image}" alt="" />
-            <img src="" alt="blog logo" />
-            <p>{props.about}</p>
+            <img src={aboutData.image= "https://via.placeholder.com/215"} alt="blog logo" />
+            <p>{aboutData.about}</p>
         </aside>
      );
 }

@@ -3,18 +3,15 @@ import blogData from "../data/blog";
 import Header from "./Header";
 import About from "./About"
 import ArticleList from "./ArticleList";
-import Article from "./Article"
 
-console.log(blogData);
+const data = blogData;
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <About/>
-      <ArticleList>
-        <Article/>
-      </ArticleList>
+      <Header headerData={data}/>
+      <About aboutData={data}/>
+      <ArticleList listData= {data}/>
     </div>
   );
 }
